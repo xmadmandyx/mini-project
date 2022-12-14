@@ -1,0 +1,62 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: rgb(253,252,243);
+}
+
+/* header */
+
+.header-primary img {
+    width: 100%;
+    max-height: 60rem;
+    margin-top: 1%;
+    padding: 3%; 
+}
+
+h1 {
+    font-family: 'Cinzel', sans-serif;
+    letter-spacing: .5rem;
+    text-align: center;
+    color: rgb(238,184,129);
+}
+
+nav {
+    font-family: 'Crimson Pro', sans-serif;
+    font-size: .5cm;
+}
+
+.container-1 {
+    position: relative;
+    width: 100%;
+}
+
+.header-primary {
+    font-family: 'Crimson Pro', sans-serif;
+    text-align: center;
+}
+
+h5{
+    margin-bottom: 1%;
+    color: rgb(238,184,129);
+    letter-spacing: .4rem;
+}
+
+h4 {
+    letter-spacing: .2rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+hr {
+    width: 2%;
+    height: 3px;
+    margin-left: 49%;
+    margin-right: auto;
+    background-color: #191a1a;
+    border: 0 none;
+  }
