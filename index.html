@@ -34,13 +34,13 @@
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item m-3">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item m-3">
-                <a class="nav-link" href="#">Sevices</a>
+                <a class="nav-link" href="services.html">Sevices</a>
               </li>
               <li class="nav-item m-3">
-                <a class="nav-link" href="#">Gallery</a>
+                <a class="nav-link" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item m-3">
                 <a class="nav-link" href="connect.html">Connect</a>
@@ -52,13 +52,14 @@
     </header>
     
     <main>
-      <article>
+      <article class="article-1">
         <section class="header-primary">
               <div class="swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide"><img src="images/set-up.jpg" alt=""> </div>
+                  <div class="swiper-slide"><img src="images/wedding-3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/wedding-4.jpg" alt=""></div>
                   <div class="swiper-slide"><img src="images/wedding-2.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="images/wedding.jpg" alt=""></div>
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
@@ -70,7 +71,104 @@
           <p>Dia Ella's Catering Services has a flair for transforming meaningful celebrations into unforgettable experiences.</p>
         </section>
       </article>
+      <br>
 
+      <!-- SERVICES SECTION -->
+      <article class="article-2">
+        <div class="slideshow-container">  
+          <div class="mySlides">
+            <div>
+              <h2 class="numbertext"> < 1 / 2 > </h2>
+            <h2 class="numbertext">SERVICES</h2>
+            <h3 class="heading__primary">WEDDING DESIGN & PLANNING</h3>
+            <p class="text">Entrust us to create magical moments on your big day, with inspired details set deep in the heart of your love story.
+            </p>
+            <a class="btn__primary" href="services.html">LEARN MORE</a>
+            <div class="content-right">
+              <img src="images/services-3.jpg" alt="Product Photo" />
+            </div>
+            </div>
+          </div>
+    
+          <div class="mySlides">
+            <h2 class="numbertext"> < 2 / 2 > </h2>
+            <h2 class="numbertext">SERVICES</h2>
+            <h3 class="heading__primary">BIRTHDAY CELEBRATION & MANAGEMENT</h3>
+            <p class="text">Entrust us to create magical moments on your big day, with inspired details set deep in the heart of your love story.
+            </p>
+            <a class="btn__primary" href="connect.html">LEARN MORE</a>
+            <div class="content-right">
+              <img src="images/services-5.jpg" alt="Product Photo" />
+            </div>
+          </div>
+    
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </article>
+
+      
+      <!-- CELEBRATION SECTION!!! -->
+      <article class="article-3">
+        <div class="header-primary">
+          <h5>CELEBRATIONS</h5>
+          <hr>
+          <h4>SOPHISTICATED, ELEGANT, CHARMING</h4>
+        </div>
+        
+        <section class="article-3__section-1">
+          <div class="article-3__subsection-1">
+            <img src="images/couple-1.JPG" alt="">
+            <a class="btn__article-3" href="mike-mk.html">MICHAEL & MARIA</a>
+          </div>
+
+          <div class="article-3__subsection-2">
+            <img src="images/couple-2.JPG" alt="">
+            <button class="btn__article-3">
+              SCOTTIE & ALLEN
+            </button>
+          </div>
+
+          <div class="article-3__subsection-3">
+            <img src="images/couple-3.JPG" alt="">
+            <a class="btn__article-3" href="alain-karen.html">ALAINE & KAREN</a>
+          </div>
+        </section>
+      </article>
+      <!-- ARTICLE 4  -->
+      <article class="article-4">
+        <div  class="header-primary">
+          <h5>LINK WITH US</h5>
+          <hr>
+          <h4>LET US HELP YOU</h4>
+        </div>
+        <section class="article-4__section-1">
+            <div class="article-4__subsection-1">
+              <img src="images/services-4.jpg" alt="">
+              <div class="article-4__content-1">
+                <h5>CONNECT</h5>
+                <hr>
+                <h4 > LET US HELP YOU PLAN THE PERFECT EVENT! </h4>
+                <a class="btn__article-2" href="connect.html">LEARN MORE</a>
+              </div>
+            </div>
+
+            <div class="article-4__subsection-2">
+              <div class="article-4__content-2">
+                <h5>SOCIALS</h5>
+                <hr>
+                <h4 > CONNECT WITH US ON FACEBOOK</h4>
+                <a class="btn__article-2" href="https://www.facebook.com/DiaEllaCatering">LEARN MORE</a>
+              </div>
+            </div>
+        </section>
+      </article>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
@@ -92,4 +190,33 @@
    },
    });
   </script>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+  showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+  showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  };
+</script>
 </html>
