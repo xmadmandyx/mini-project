@@ -1,6 +1,7 @@
 * {
     padding: 0%;
     margin: 0%;
+    box-sizing:border-box;
 }
 
 body {
@@ -11,9 +12,9 @@ body {
 
 .header-primary img {
     width: 100%;
-    max-height: 43rem;
-    margin-top: 5%;
-    margin-bottom: 3%;
+    max-height: 50rem;
+    margin-top: 1%;
+    padding: 3% 0%; 
 }
 
 h1 {
@@ -35,106 +36,22 @@ nav {
 
 h5{
     margin-bottom: 1%;
+    margin-top: 2%;
     color: rgb(238,184,129);
     letter-spacing: .4rem;
 }
 
 h4 {
-    margin-bottom: 1%;
-    letter-spacing: .2rem;
+    letter-spacing: .5rem;
+    font-size: 22px;
     color: rgb(87, 86, 86);
 }
 
 p {
     font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.8rem;
     color: rgb(87, 86, 86);
-}
-
-form {
-    font-family: 'Crimson Pro', sans-serif;
-    font-size: 1.1rem;
-    
-    position: relative;
-    background-color: rgb(252, 235, 217);
-    width: 50%;
-    height: 63%;
-    padding: 2rem;
-    margin-left: 25%;
-    margin-top: 1%;
-}
-
-.input-group {
-    font-family: 'Crimson Pro', sans-serif;
-    font-size: 1.1rem;
-    position: absolute;
-    width: 43%;
-    color: rgb(87, 86, 86);
-}
-
-.input-group-2 {
-    font-family: 'Crimson Pro', sans-serif;
-    font-size: 1.1rem;
-    width: 47%;
-    margin-left: 53%;
-    color: rgb(87, 86, 86);
-}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-    color: rgb(87, 86, 86);
-}
-
-input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-    color: rgb(87, 86, 86);
-}
-
-input[type=date], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-    color: rgb(87, 86, 86);
-}
-
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-}
-
-input[type=submit] {
-    background-color: rgb(255,250,240);
-    color: rgb(87, 86, 86);
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
-
-input[type=submit]:hover {
-    background-color: rgb(241, 139, 36);
-    color: rgb(87, 86, 86);
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
-
-.inquiries {
-    font-size: 1.3rem;
-    letter-spacing: .2rem;
-    text-align: center;
 }
 
 hr {
@@ -146,9 +63,27 @@ hr {
     border: 0 none;
   }
 
-  .article-4 {
+  .header-content {
+    position: absolute;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.header-secondary img {
+    width: 100%;
+    max-height: 50rem;
+    margin-top: 30%;
+    padding: 3% 0%; 
+}
+
+.header-secondary {
+    font-family: 'Crimson Pro', sans-serif;
+    text-align: center;
+}
+
+.article-4 {
     position: relative;
-    margin-top: 5%;
+    margin-top: 40%;
 }
 
 .article-4__section-1 {
